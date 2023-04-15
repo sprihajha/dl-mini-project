@@ -1,7 +1,10 @@
 # Modified Residual Network for CIFAR-10 Image Classification
+>  ECE-GY 7123: Deep Learning (Spring 2023) Mini-Project
+>  
+>  Team Members: Spriha Jha, Kabir Jaiswal, Nigam Patel
 
 ### 1. Abstract
-In order to adhere to a restriction of less than 5 million parameters, we created and implemented a modified Residual Network (ResNet) architecture in this research. The goal was to achieve the maximum test accuracy on the CIFAR-10 image classification dataset. To create our final model, we investigated a range of architectural options and arrangements. Our updated ResNet architecture used 2,765,802 parameters and obtained a test accuracy of 94.17%.
+In order to adhere to a restriction of less than 5 million parameters, we created and implemented a modified Residual Network (ResNet) architecture in this research. The goal was to achieve the maximum test accuracy on the CIFAR-10 image classification dataset. To create our final model, we investigated a range of architectural options and arrangements. Our updated ResNet architecture used 2,797,610 parameters and obtained a test accuracy of 94.17%.
 
 ### 2. Introduction
 In the field of computer vision, the CIFAR-10 dataset is a frequently used benchmark for image classification tasks. It has 60,000 32x32 color photos that are split up into 10 classes, each with 6,000 images. 50,000 photos make up the training set, while 10,000 images make up the test set. The ten classes—which represent a wide variety of items frequently seen in daily life—include an automobile, a bird, a cat, a deer, a dog, a frog, a horse, a ship, and a truck. Due to the considerable intra-class variability and relatively low image resolution in this dataset, it is an excellent candidate for testing the effectiveness and durability of different deep learning models in image classification tasks. 
@@ -24,7 +27,7 @@ The amount of fundamental blocks, channels, and stride values were a few of the 
 Stochastic Gradient Descent (SGD) was used to train the model, using a learning rate of 0.1, momentum of 0.9, and weight decay of 5e-4. The maximum number of epochs for the Cosine Annealing learning rate scheduler was 200. The loss function chosen was called cross-entropy loss.
 
 ### 4. Results
-With 2,765,802 total parameters, our updated ResNet model's test accuracy was 94.17%. The model was trained over 200 epochs, with epoch 200 showing the highest test accuracy. The training accuracy was 99.968% at the last epoch.
+With 2,797,610 total parameters, our updated ResNet model's test accuracy was 94.17%. The model was trained over 200 epochs, with epoch 200 showing the highest test accuracy. The training accuracy was 99.964% at the last epoch.
 
 ### 5. Conclusion
 In order to categorize CIFAR-10 images while following to the restriction of less than 5 million parameters, we successfully constructed a modified ResNet architecture in this project. The final model's test accuracy of 94.17% showed how well it performed picture classification tasks. The performance of the model may be significantly enhanced in the future work by investigating more architectural options, regularization methods, and training methodologies.
